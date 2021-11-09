@@ -36,8 +36,8 @@ class SearchHelper(BasePage):
         return search_suggest
 
     def check_search_suggest(self):
-        search_suggest = self.find_element(YandexSeacrhLocators.LOCATOR_YANDEX_SUGGEST)
-        return search_suggest
+        assert self.find_element(YandexSeacrhLocators.LOCATOR_YANDEX_SUGGEST)
+        print(self.find_element(YandexSeacrhLocators.LOCATOR_YANDEX_SUGGEST))
 
     def check_search_field(self):
         search_field = self.find_element(YandexSeacrhLocators.LOCATOR_YANDEX_SEARCH_FIELD)
